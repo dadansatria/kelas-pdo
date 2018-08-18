@@ -5,7 +5,7 @@ class koneksi
 	
 	public $db;
 	
-	function getKoneksi()
+	public function getKoneksi()
 	{
 	    // Konfigurasi database databse
         $host = "localhost";
