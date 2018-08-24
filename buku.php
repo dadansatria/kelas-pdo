@@ -10,7 +10,7 @@ class Buku extends Koneksi
 	
 	public function findAllBuku()
 	{
-		$db = parent::getKoneksi();
+		$db = $this->getKoneksi();
 		$query = $db->prepare('SELECT * FROM buku');
 		$query->execute();
 
@@ -19,7 +19,7 @@ class Buku extends Koneksi
 
 	public function findOneBuku($id)
 	{
-		$db = parent::getKoneksi();
+		$db = $this->getKoneksi();
 		$query = $db->prepare("SELECT * FROM buku WHERE id = $id");
 		$query->execute();
 
@@ -28,21 +28,21 @@ class Buku extends Koneksi
 
 	public function hapusBuku($id)
 	{
-		$db = parent::getKoneksi();
+		$db = $this->getKoneksi();
 		$query = $db->prepare("DELETE FROM buku WHERE id = $id");
 		return $query->execute();
 	}
 
 	public function simpanData($nama, $tahun_terbit)
 	{
-		$db = parent::getKoneksi();
+		$db = $this->getKoneksi();
 		$query = $db->prepare("INSERT INTO buku (nama,tahun_terbit) VALUES ('$nama',$tahun_terbit);");
 		return $query->execute();		
 	}
 
 	public function ubahData($nama, $tahun_terbit, $id)
 	{
-		$db = parent::getKoneksi();
+		$db = $this->getKoneksi();
 		$query = $db->prepare("UPDATE buku SET nama = '$nama', tahun_terbit = '$tahun_terbit' WHERE id = $id");
 		return $query->execute();		
 	}	

@@ -5,6 +5,7 @@
 <head>
 	<title>Menampilkan Buku</title>
 </head>
+<link rel="stylesheet" type="text/css" href="boostrap.min.css">
 
 <body>
 
@@ -13,7 +14,7 @@
 <a href="create.php">Input Buku</a>
 
 
-<table border="1">
+<table class="tabl" border="1">
 	<tr>
 		<td>No</td>
 		<td>Nama</td>

@@ -14,6 +14,8 @@ class Koneksi {
     }
 }
 
+/* yang dibawah ini untuk contoh anak2 kemarin*/
+
 $koneksi = new Koneksi();
 $db = $koneksi->getKoneksi();
 
