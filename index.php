@@ -34,9 +34,9 @@
 		<td><?php echo $data['nama']; ?></td>
 		<td><?php echo $data['sinopsis']; ?></td>
 		<td width="200px" style="text-align: center">
-			<a href="detail.php?id=<?php echo $data['id']; ?>" class="btn btn-primary btn-sm" >Detail</a>
-			<a href="update.php?id=<?php echo $data['id']; ?>" class="btn btn-success btn-sm" >Update</a>
-			<a href="hapus.php?id=<?php echo $data['id']; ?>" class="btn btn-danger btn-sm" >Hapus</a>
+			<a href="detail.php?id=<?php echo $data['id']; ?>" class="btn btn-primary btn-sm" ><i class="fa fa-eye"></i> Detail</a>
+			<a href="update.php?id=<?php echo $data['id']; ?>" class="btn btn-success btn-sm" ><i class="fa fa-pencil"></i> Update</a>
+			<a href="hapus.php?id=<?php echo $data['id']; ?>" class="btn btn-danger btn-sm" ><i class="fa fa-trash"></i> Hapus</a>
 		</td>
 	</tr>
 	<?php } ?>

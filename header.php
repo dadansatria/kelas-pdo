@@ -12,7 +12,7 @@
 	<div>&nbsp;</div>
 	<div class="row">
 		<div class="col-sm-2">
-			<i style="font-size: 90px" class="fa fa-pencil-square-o"></i>
+			<i style="font-size: 90px" class="fa fa-superpowers"></i>
 		</div>
 		<div class="col-sm-9">
 			<h2>Lorem Ipsum Dolor</h2>
