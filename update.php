@@ -1,3 +1,6 @@
+<?php require_once 'header.php'; ?>
+<?php require_once 'buku.php'; ?>
+
 <?php 
 
 	require_once 'buku.php';
