@@ -10,6 +10,8 @@
 
 <body>
 
+<?php session_start(); ?>
+
 <?php $buku = new Buku(); ?>
 
 <h2>Daftar Buku</h2>
@@ -17,6 +19,8 @@
 <a href="create.php" class="btn btn-primary">Input Buku</a>
 
 <div>&nbsp;</div>
+
+<h2> halo <?= $_SESSION['username']; ?></h2>
 
 
 <table class="table table-bordered table-hover">

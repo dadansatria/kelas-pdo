@@ -18,7 +18,5 @@
 <form action="create.php" method="post">
 	<input type="text" name="nama" placeholder="Nama Buku">
 	<input type="text" name="tahun_terbit" placeholder="Tahun Terbit">
-
-
 	<input type="submit" name="submit">
 </form>
